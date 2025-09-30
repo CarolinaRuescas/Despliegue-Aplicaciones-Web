@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Autores: Carolina Ruescas Cruz y Adrián Mustatea-->
+<!-- 1º DAW . 3º Evaluación-->
+    <head>
+        <title>VIAJES</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                color: #000000;
+            }
+
+            /* Encabezado de la página */
+            .header {
+                background: linear-gradient(to left, rgb(16, 71, 58), #feb47b);
+                padding: 30px;
+                text-align: center;
+                color: white;
+            }
+
+            .header h1 {
+                font-size: 50px;
+                text-shadow: 0 0 10px #fd6e1b
+            }
+
+            .header nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            .header nav ul li a {
+                background-color: #eea67c;
+                padding: 10px 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                transition: background-color 0.3s ease;     
+            }
+
+            .header nav a:hover {
+                color: rgb(16, 71, 58);
+                background-color: #ffffff;
+            }
+
+            /* Menú selección de lugares*/
+            .topnav a {
+                float: center;
+                display: block ;
+                color: #ffffff;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                border: 4px outset #082e1f;
+                background-color:  #47b68b;
+            }
+            
+            .topnav a:hover {
+                background-color: #082e1f;
+                color: rgb(216, 89, 30);
+            }
+
+
+            /* Cuerpo de la página */
+            h2{
+                color:#082e1f;
+                font-variant: small-caps;
+            }
+
+            h3{
+                color: #ca6623;
+            }
+
+            .flotanteImagen {
+                top: 30px; 
+                right: 40px; 
+                width: 70%;  
+                height: auto;
+                border-radius: 30px;
+            }
+
+            .columna_izquierda {   
+                float: left;
+                width: 75%;
+                background-color: #ffffff;
+            }
+
+            .columna_derecha {
+                float: left;
+                width: 25%;
+                background-color: #ffffff;
+                padding-left: 20px;
+            }
+
+
+            .card {
+                background-color: #e2c298;
+                padding: 20px;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .card2 {
+                background-color: #fbe6ca;
+                border: dotted 8px #082e1f;
+                padding: 20px;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .card2 a{
+                background-color: #082e1f;
+                padding: 3px 3px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+
+            .card2 a:hover {
+                background-color: #082e1f;
+                color: rgb(216, 89, 30);
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+
+            /* Pie de la página*/
+            .footer {
+                background: linear-gradient(to right, rgb(16, 71, 58), #feb47b);
+                padding: 10px;
+                text-align: center;
+                color: white;
+                margin-top: 20px;
+            }
+
+            /* Para hacerla responsiva*/
+            @media screen and (max-width: 800px) {
+                .columna_izquierda, .columna_derecha {   
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>GASTRONOMÍA</h1>
+            <h2> ···· Ñaaam Ñaaam ····</h2>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="Pagina_Inicio.html">Página Inicial</a></li>
+                    <li><a href="Pagina_Formulario.html">Formulario de Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+            
+        <div class="topnav">
+            <a href="https://www.esmadrid.com/">· Madrid ·</a>
+            <a href="https://www.viajarabarcelona.org/">· Barcelona ·</a>
+            <a href="https://www.andalucia.org/es/provincia-malaga">· Málaga ·</a>
+        </div>
+
+        <div class="row">
+            <div class="columna_izquierda">
+                <div class="card">
+                    <h2>· ¡ VIAJA POR MADRID ! ·</h2>
+                    <img src="imagenes/imagenMadrid.jpg" alt="imagen de Madrid" class="flotanteImagen">
+                    <h3>¿Quieres saber un poco sobre Madrid?</h3>
+                    <p>Descubre Madrid como nunca antes con nuestra guía de viajes completa. Desde los emblemáticos museos 
+                        y monumentos hasta los rincones más ocultos de la ciudad, te ofrecemos recomendaciones personalizadas, 
+                        itinerarios únicos y consejos locales para que disfrutes de cada momento. Ya sea que busques arte, gastronomía, 
+                        cultura o aventura, Madrid te espera con los brazos abiertos.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>· ¡ BARCELONA ! ·</h2>
+                    <img src="imagenes/imagenBarcelona.jpg" alt="imagen de Barcelona" class="flotanteImagen">
+                    <h3>¿Quieres saber un poco sobre Barcelona?</h3>
+                    <p>Explora Barcelona, una ciudad vibrante llena de historia, arquitectura y cultura. Desde la majestuosa Sagrada Familia
+                        hasta sus encantadoras calles del barrio Gótico, nuestra guía te lleva a los lugares más icónicos y a los secretos 
+                        mejor guardados. Disfruta de una experiencia única con itinerarios personalizados, recomendaciones de restaurantes y 
+                        actividades, ¡y vive lo mejor de la Ciudad Condal!
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>· ¡ MÁLAGA ! ·</h2>
+                    <img src="imagenes/imagenMalaga.jpg" alt="imagen de Malaga" class="flotanteImagen">
+                    <h3>¿Quieres saber un poco sobre Málaga?</h3>
+                    <p>Sumérgete en la belleza de Málaga, un destino que fusiona historia, sol y mar. Descubre sus impresionantes playas, 
+                        su vibrante cultura andaluza y los tesoros históricos como la Alcazaba y el Museo Picasso. Te ofrecemos itinerarios
+                         a medida, recomendaciones gastronómicas y todo lo que necesitas para vivir la magia de esta ciudad costera. ¡Málaga 
+                         te espera con su clima perfecto y su auténtico encanto!
+                    </p>
+                </div>
+            </div>
+            <div class="columna_derecha">
+                <div class="card">
+                    <h2>Sobre Nosotros</h2>
+                    <img src="imagenes/imagenLogo.jpeg" alt="imagen Logo" class="flotanteImagen">
+                    <p>Nos encanta viajar y queremos que tú también vivas España de una forma única.
+                         Te llevamos a descubrir lugares increíbles, desde ciudades llenas de historia 
+                         hasta rincones escondidos que pocos conocen.</p>
+                </div>
+                <div class="card">
+                    <h2>¿Prefieres la Naturaleza?</h2>
+                    <div class="card2">
+                        <img src="imagenes/imagenCampoMadrid.jpg" alt="imagen ruta Madrid" class="flotanteImagen">
+                        <p><a href="https://madridsecreto.co/rutas-senderismo-madrid/">PULSA AQUÍ</a></p>
+                        <p>Las 20 mejores rutas cerca de Madrid </p>
+                    </div>
+                    <div class="card2">
+                        <img src="imagenes/imagenCampoLeon.jpeg" alt="imagen ruta Leon" class="flotanteImagen">
+                        <p><a href="https://www.komoot.com/es-es/guide/40003/rutas-de-senderismo-en-leon">PULSA AQUÍ</a></p>
+                        <p>Las 10 rutas más TOP en León </p>
+                    </div>
+                    <div class="card2">
+                        <img src="imagenes/imagenCampoAlbacete.jpg" alt="imagen ruta Albacete" class="flotanteImagen">
+                        <p><a href="https://www.tuscasasrurales.com/blog/rutas-senderismo-albacete/">PULSA AQUÍ</a></p>
+                        <p>Descubre las mejores rutas en Albacete </p>
+                    </div>
+                </div>
+                <div class="card">
+                        <h2>Follow Me</h2>
+                        <p>Some text..</p>
+                </div>
+            </div>
+        </div>
+              
+        <div class="footer">
+                <h2>Footer</h2>
+                <p>Todos los derechos reservados</p>
+        </div>
+    </body>
+</html>

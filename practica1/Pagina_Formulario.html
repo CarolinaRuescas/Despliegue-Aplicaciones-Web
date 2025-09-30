@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Autores: Carolina Ruescas Cruz y Adrián Mustatea-->
+<!-- 1º DAW . 3º Evaluación-->
+    <head>
+        <title>VIAJES</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.6;
+                background-color: #ffffff;
+                color: #000000;
+            }
+
+            /* Encabezado de la página*/
+
+            .header {
+                background: linear-gradient(to right, rgb(16, 71, 58), #feb47b);
+                padding: 30px;
+                text-align: center;
+                color: white;
+            }
+
+            .header h1 {
+                font-size: 50px;
+                text-shadow: 0 0 10px #fd6e1b
+            }
+
+            .header nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            .header nav ul li a {
+                background-color: #eea67c;
+                padding: 10px 10px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                transition: background-color 0.3s ease;     
+            }
+
+            .header nav a:hover {
+                color: rgb(16, 71, 58);
+                background-color: #ffffff;
+            }
+
+            
+            h2{
+                color:#082e1f;
+                font-variant: small-caps;
+                font-size: 35px;
+            }
+
+            /* Cuerpo de la página */
+
+            .column {   
+                float: none;
+                width: 100%;
+                padding: 20px;
+                background-color: #ffffff;                
+            }
+
+
+            .card {
+                background-color: #e2c298;
+                padding: 20px;
+                margin-top: 20px;
+                text-align: center;
+                border: dotted 8px #082e1f;
+
+
+            }
+
+            /* Formulario */
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+            }
+
+            label {
+              padding: 12px 12px 12px 0;
+              display: inline-block;
+            }
+
+            input[type=submit] {
+              background-color: #04AA6D;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+            }
+
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+
+            .container {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+
+            .col-25 {
+              float: left;
+              width: 25%;
+              margin-top: 6px;
+            }
+
+            .col-75 {
+              float: left;
+              width: 75%;
+              margin-top: 6px;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+
+            /* Pie de página */
+
+            .footer {
+                background: linear-gradient(to right, rgb(16, 71, 58), #feb47b);
+                padding: 10px;
+                text-align: center;
+                color: white;
+                margin-top: 20px;
+            }
+
+            h2{
+                color:#082e1f;
+                font-variant: small-caps;
+                font-size: 35px;
+            }
+
+            
+            /* Para hacerla responsiva */
+
+            @media screen and (max-width: 800px) {
+                .columna_izquierda, .columna_derecha {   
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+                }
+            }
+            @media screen and (max-width: 600px) {
+              .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+              }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Descubriendo España</h1>
+            <p>Descubre destinos increíbles y consejos para tus próximas aventuras</p>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="Pagina_Inicio.html">Inicio</a></li>
+                    <li><a href="Pagina_Gastronomia.html">Gastronomía</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <form action="/action_page.php">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="nombre">Nombre</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre es..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="apellido">Apellido</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido es..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="Pais">País</label>
+                      </div>
+                      <div class="col-75">
+                        <select id="Pais" name="pais">
+                          <option value="Spain">España</option>
+                          <option value="Portugal">Portugal</option>
+                          <option value="France">Francia</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="comentario">Comentario</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="comentario" name="comentario" placeholder="Comenta algo.." style="height:200px"></textarea>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <input type="submit" value="Submit">
+                    </div>
+                    </form>
+                  </div>
+            </div>
+        </div>
+              
+        <div class="footer">
+                <h2>Footer</h2>
+                <p>Todos los derechos reservados</p>
+        </div>
+    </body>
+</html>
